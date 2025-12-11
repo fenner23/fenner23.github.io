@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="finalcss.css">
+    
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: hsl(333, 47%, 93%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: hsl(333, 47%, 93%);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #ee5e9f;
+            width: 350px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 200x;
+        }
+         
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            font-size: 14px;
+        } 
+        textarea {
+            resize: vertical;
+        }
+        .radio-group, .checkbox-group label {
+            margin-top: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #ff1385;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #cf0080;
+        }
+        .note {
+            font-size: 12px;
+            color: #555;
+            margin-top: 5px;
+        } 
+       
+
+    </style>
+    <form class="consultation-form" action="#" method="post">
+        <h2>Request a consultation</h2>
+        <!-- Full Name -->
+         <label for="full name">Full Name:</label>
+         <input type="text" id="fullname" name="fullname" placeholder="John/Jane Doe" required>
+
+        <!-- Email -->
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required> 
+        
+        <!-- Phone --> 
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123)456-7890" required>
+
+        <!-- Preferred Consultation Date -->
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+
+        <!-- Service Type-->
+          <label for="service">Type of Consultation:</label>
+          <select id="service" name="service" required>
+            <option value="">select a service</option>
+            <option value="Divorce">Divorce consultation</option>
+            <option value="Criminal">Criminal Consultation</option>
+            <option value="Civil">Civil Consultation</option>
+            <option value="Custody">Custody Consultation</option>
+            <option value="questions">Questions</option>
+          </select>
+        <!--form buttons -->
+            <button type ="submit">Submit </button>
+            <button type ="reset">Reset </button>
+        </form>
+           
+</body>
+</html>
