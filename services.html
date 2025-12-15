@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty & Associates Law Firm </title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="FinalcssServices.css">
+
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: hsl(333, 47%, 93%);
+            background-color: hsl(333, 47%, 93%);
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+        .overlay .closebtn {
+            position: absolute;
+            top:20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        @media screen and (max-height: 450px) {
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">| Hello Kitty & Associates Law Firm | </h2>
+            <ul>
+                <li><a href="indexfinal.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html" >ABOUT</a></li>
+                <li><a href="services.html" class="active">SERVICES AND INFO</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Our Legal Services</h1>
+        <p>Experienced, reliable, and dedicated representation.</p>
+
+        <!--Image-->
+        <img src="bettercallsaulimg.jpg" width="300" height="200" class="hero-image">
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-container">
+        <div class="service-card">
+            <a href="https://www.nacdl.org/" target="_blank">
+            <h3>Criminal Defense</h3>
+            <p>Strong courtroom representation and legal protection you can trust.</p>
+        </div>
+
+        <div class="service-card">
+            <a href="https://www.divorcenet.com/" target="_blank">
+            <h3>Family Law</h3>
+            <p>Guidance through divorce, custody, adoption, and family-related disputes.</p>
+        </div>
+
+        <div class="service-card">
+            <a href="https://reyabogado.com/us/what-is-the-injury-law-in-the-united-states/" target="_blank">
+            <h3>Personal Injury</h3>
+            <p>Helping you win compensation for injuries and negligence cases.</p>
+        </div>
+
+        <div class="service-card">
+            <a href="https://legal.thomsonreuters.com/blog/corporate-law/" target="_blank">
+            <h3>Corporate Law</h3>
+            <p>Business formation, contracts, compliance, and dispute resolution.</p>
+        </div>
+
+        <div class="service-card">
+            <a href="https://legalclarity.org/what-is-real-estate-law-key-concepts-explained/" target="_blank">
+            <h3>Estate Planning</h3>
+            <p>Wills, trusts, and long-term planning to protect your assets.</p>
+        </div>
+        <div class="constitution">
+            <a href="https://constitution.congress.gov/constitution/" target="_blank">
+            <h3>Constitution</h3>
+            <p>All of your rights and amendments.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Hello Kitty & Associates Law Firm | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
